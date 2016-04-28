@@ -1,8 +1,10 @@
 # Assignment: Getting and Cleaning Data Course Project
 
+
 ## Raw Data
 
 The raw data comes from Human Activity Recognition Using Smartphones Data Set based on accelerometers from the Samsung Galaxy S smartphone. The data set is included in a zip file that needed to be extracted prior to load into R for analysis. Please consult the README.txt file included in the zip for details about the data files.
+
 
 ## Analysis
 
@@ -30,15 +32,28 @@ There are 2 sets of tidy data generated from this analysis:
  - tidy1 - contain a merged of test and train data sets into one data set. It only includes the measurements on the mean and standard deviation for each measurement. The process also captured descriptive activity names and labels for each activity.
  - tidy2 - contain aggregates from tidy1 data set including the average of each variable for each activity and each subject.
 
-## Variables
+ 
+## Variables in the analysis
+ - subjectTest			: dataframe		raw data from subject_test.txt
+ - subjectTrain			: dataframe		raw data from subject_train.txt
+ - subject				: dataframe		conbine data set from subject_test.txt and subject_train.txt
+ - activityLabel		: dataframe		raw data from activity_labels.txt
+ - feature				: dataframe		raw data from features.txt
+ - yTest				: dataframe		raw data from y_test.txt
+ - yTrain				: dataframe		raw data from y_train.txt
+ - y					: dataframe		combine data set from y_test.txt and y_train.txt
+ - xTest				: dataframe		raw data from x_test.txt
+ - xTrain				: dataframe		raw data from x_train.txt
+ - x					: dataframe		combine data set from x_test.txt and x_train.txt
+ - yx					: dataframe		combine data set from y and x
+ - z					: dataframe		merged data set to cinlude activity label in yx data set
+ - tidy1				: dataframe		tidy data set to include the mean and standard deviation for each measurement
+ - tidy2				: dataframe		tidy data set to include the mean and standard deviation for each measurement grouped by activity and subject
+
+ 
+## Variables in final tidy data set
  - subject                      : integer	Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
- - label_name                   : factor	Links the class labels with their activity name. WALKING
-, WALKING_UPSTAIRS
-, WALKING_DOWNSTAIRS
-, SITTING
-, STANDING
-, LAYING
-.
+ - label_name                   : factor	Links the class labels with their activity name. WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.
 
 The following variables are features selected mean and standard deviation from the accelerometer and gyroscope data. They are average of each variable over time grouped by activity and subject:
 

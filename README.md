@@ -1,9 +1,7 @@
 # Assignment: Getting and Cleaning Data Course Project
 
 ## Overview
-The purpose of this analysis is to prepare tidy data for later analysis from accelerometers recorded on the Samsung Galaxy S smartphone. 
-
-find mean and standard deviation for each measurement.
+The purpose of this analysis is to prepare tidy data for later analysis from accelerometers recorded on the Samsung Galaxy S smartphone. The tidy data includes mean and standard deviation for each measurement grouped by activity and subject.
 
 ## Data
 A full description of the raw data set is available at the site:
