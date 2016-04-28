@@ -12,9 +12,13 @@ The raw data for the project can be obtained from:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
+Tidy data (output) includes mean and standard deviation for each measurement grouped by activity and subject:
+./data/activity_mean.txt
+
 ## Analysis
 The analysis script can be found in run_analysis.R. The script includes steps to download the raw data. Here are the steps to generate the tidy data set:
 
 1) Download the analysis script, run_analysis.R.
 2) Run the script in R to obtain the raw data and generate the tidy data set.
+
 
